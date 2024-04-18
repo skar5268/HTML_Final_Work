@@ -1,0 +1,309 @@
+@import "reset.scss";
+@import "variable.scss";
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.top {
+  background-color: $white;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4px 0;
+
+  li {
+    display: flex;
+    padding: 4px 0;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+}
+
+.fb {
+  margin-right: 12px;
+
+  a {
+    padding-right: 12px;
+    color: #4267b2;
+    border-right: 1px solid $gray;
+  }
+}
+
+.twitter a {
+  color: #1da1f2;
+}
+
+h1 a {
+  background-image: url(../img/hexschool-logo.png);
+  width: 151px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  li {
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 12px;
+    }
+
+    a {
+      padding: 24px 0;
+      color: $secondary-color;
+      font-weight: bold;
+      border-bottom: 4px solid rgba($color: $primary-color, $alpha: 0);
+      transition: 0.5s;
+
+      &:hover {
+        color: $primary-color;
+        border-bottom: 4px solid rgba($color: $primary-color, $alpha: 1);
+      }
+    }
+  }
+}
+
+.banner {
+  background-image: url(../img/header_background.jpg);
+  padding: 125px 0;
+  margin-bottom: 60px;
+  
+  .banner_title {
+    background-color: rgba($color: #ffffff, $alpha: 15%);
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: bold;
+    padding: 27px 0px;
+    width: 920px;
+    margin: 0 auto;
+  }
+}
+
+.courses {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .course {
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba($color: $black, $alpha: 16%);
+    line-height: 1.5;
+    padding: 20px;
+
+    img {
+      margin: 0 auto;
+    }
+
+    &:first-child {
+      img {
+        margin-bottom: 12px;
+      }
+    }
+
+    &:nth-child(2) {
+      padding-top: 25px;
+
+      img {
+        margin-bottom: 2px;
+      }
+    }
+    &:last-child {
+      padding-top: 68px;
+
+      img {
+        margin-bottom: 43px;
+      }
+
+      ul {
+        list-style: disc;
+
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    h4 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.course_compare_title {
+  color: $black;
+  margin-bottom: 24px;
+}
+
+.course_compare {
+  width: 920px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  tr {
+    border-bottom: 1px solid #cccccc;
+    
+    th:first-child,
+    td:first-child {
+      padding-left: 17px;
+      line-height: 24px;
+    }
+  }
+
+  .compare_title{
+    border-top: 1px solid #cccccc;
+  }
+
+  th,
+  td {
+    padding: 6px 0px 5px 0;
+    line-height: 24px;
+  }
+
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .focus {
+    font-weight: bold;
+    color: $primary-color;
+  }
+}
+
+form {
+  background-image: linear-gradient(to bottom, #e4fff8, #a2ddce);
+  padding: 36px 0;
+
+  h3 {
+    color: $secondary-color;
+    margin-bottom: 28px;
+  }
+
+  label,
+  input {
+    display: block;
+  }
+
+  label {
+    line-height: 19px;
+    color: $secondary-color;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 351px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 0 6px 10px;
+    margin-bottom: 16px;
+    border: 1px solid #aaaaaa;
+    color: #999999;
+    border-radius: 3px;
+  }
+
+  textarea {
+    border: 1px solid #aaaaaa;
+    color: #999999;
+    width: 350px;
+    height: 200px;
+    border-radius: 3px;
+  }
+}
+
+.form_group {
+  width: 730px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: $secondary-color;
+  color: #ffffff;
+  line-height: 18px;
+  padding: 10px 64px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary-color;
+    transition: 0.5s;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  
+  img {
+    padding: 22px 0;
+  }
+  
+  a {
+    display: inline-block;
+  }
+}
+
+.contact {
+  padding: 16px 0;
+  line-height: 24px;
+
+  a {
+    color: $primary-color;
+    transition: 0.5s;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

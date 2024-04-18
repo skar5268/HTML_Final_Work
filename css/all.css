@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.top {
+  background-color: #F6F6F8;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4px 0;
+}
+.social li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0;
+}
+.social li img {
+  margin-right: 5px;
+}
+.social a:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fb {
+  margin-right: 12px;
+}
+.fb a {
+  padding-right: 12px;
+  color: #4267b2;
+  border-right: 1px solid #CCCCCC;
+}
+
+.twitter a {
+  color: #1da1f2;
+}
+
+h1 a {
+  background-image: url(../img/hexschool-logo.png);
+  width: 151px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu li {
+  margin-right: 42px;
+}
+.menu li:last-child {
+  margin-right: 12px;
+}
+.menu li a {
+  padding: 24px 0;
+  color: #00251A;
+  font-weight: bold;
+  border-bottom: 4px solid rgba(0, 204, 153, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu li a:hover {
+  color: #00CC99;
+  border-bottom: 4px solid #00cc99;
+}
+
+.banner {
+  background-image: url(../img/header_background.jpg);
+  padding: 125px 0;
+  margin-bottom: 60px;
+}
+.banner .banner_title {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.banner h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: bold;
+  padding: 27px 0px;
+  width: 920px;
+  margin: 0 auto;
+}
+
+.courses {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.courses .course {
+  max-width: 350px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  line-height: 1.5;
+  padding: 20px;
+}
+.courses .course img {
+  margin: 0 auto;
+}
+.courses .course:first-child img {
+  margin-bottom: 12px;
+}
+.courses .course:nth-child(2) {
+  padding-top: 25px;
+}
+.courses .course:nth-child(2) img {
+  margin-bottom: 2px;
+}
+.courses .course:last-child {
+  padding-top: 68px;
+}
+.courses .course:last-child img {
+  margin-bottom: 43px;
+}
+.courses .course:last-child ul {
+  list-style: disc;
+}
+.courses .course:last-child ul li {
+  margin-left: 20px;
+}
+.courses .course h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.courses .course p {
+  color: #000000;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.course_compare_title {
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.course_compare {
+  width: 920px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.course_compare tr {
+  border-bottom: 1px solid #cccccc;
+}
+.course_compare tr th:first-child,
+.course_compare tr td:first-child {
+  padding-left: 17px;
+  line-height: 24px;
+}
+.course_compare .compare_title {
+  border-top: 1px solid #cccccc;
+}
+.course_compare th,
+.course_compare td {
+  padding: 6px 0px 5px 0;
+  line-height: 24px;
+}
+.course_compare th {
+  font-weight: bold;
+  text-align: left;
+}
+.course_compare .focus {
+  font-weight: bold;
+  color: #00CC99;
+}
+
+form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4fff8), to(#a2ddce));
+  background-image: linear-gradient(to bottom, #e4fff8, #a2ddce);
+  padding: 36px 0;
+}
+form h3 {
+  color: #00251A;
+  margin-bottom: 28px;
+}
+form label,
+form input {
+  display: block;
+}
+form label {
+  line-height: 19px;
+  color: #00251A;
+  margin-bottom: 8px;
+}
+form input {
+  width: 351px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 0 6px 10px;
+  margin-bottom: 16px;
+  border: 1px solid #aaaaaa;
+  color: #999999;
+  border-radius: 3px;
+}
+form textarea {
+  border: 1px solid #aaaaaa;
+  color: #999999;
+  width: 350px;
+  height: 200px;
+  border-radius: 3px;
+}
+
+.form_group {
+  width: 730px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  background-color: #00251A;
+  color: #ffffff;
+  line-height: 18px;
+  padding: 10px 64px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #00CC99;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer img {
+  padding: 22px 0;
+}
+.footer a {
+  display: inline-block;
+}
+
+.contact {
+  padding: 16px 0;
+  line-height: 24px;
+}
+.contact a {
+  color: #00CC99;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.contact a:hover {
+  color: #00251A;
+}
